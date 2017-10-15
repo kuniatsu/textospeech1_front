@@ -1,0 +1,43 @@
+
+<app-voice></app-voice>
+
+<hr/>
+
+<!--<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>-->
+<form><!--debug-->
+  <select name="voice1" ngModel="en-US, BenjaminRUS">
+    <option *ngFor="let voice of voices" [value]="voice.value">{{voice.name}}</option>
+  </select>
+  <br/>
+  <select name="voice2" ngModel="">
+    <option *ngFor="let voice of voices" [value]="voice.value">{{voice.name}}</option>
+  </select>
+  <br/>
+  <select name="voice3" ngModel="ja-JP, Ichiro, Apollo">
+    <option *ngFor="let voice of voices" [value]="voice.value">{{voice.name}}</option>
+  </select>
+  <br/>
+  <select name="voice4" ngModel="">
+    <option *ngFor="let voice of voices" [value]="voice.value">{{voice.name}}</option>
+  </select>
+  <br/>
+  <button type="button" (click)="makeStart()">作成開始</button>
+
+</form>
+
+
+<hr/>
+<div>
+  <div *ngFor="let card of cards">
+    <app-card [English]="card.en" [katakana]="card.kana" [Japanese]="card.ja" (cardChecking)="test($event)"></app-card>
+  </div>
+</div>
+
+
+
+
+
+<hr/><!--------------------------------------------------------------------------------------------->
+
+<pre>{{checkCard|json}}</pre>
+

@@ -1,0 +1,20 @@
+{
+  "apple":{
+    "English":"apple",
+    "katakana":"アップル",
+    "japanese":"りんご",
+    "Tag":["toeic","eiken5"]
+  },
+  "orange":{
+    "English":"orange",
+    "katakana":"オレンジ",
+    "japanese":"おれんじ",
+    "Tag":["toeic","eiken4"]
+  },
+  "rice":{
+    "English":"rice",
+    "katakana":"ライス",
+    "japanese":"ご飯",
+    "Tag":["toeic","eiken3"]
+  }
+}

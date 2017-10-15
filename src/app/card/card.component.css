@@ -1,0 +1,15 @@
+.unCheckCard{
+float:left;
+background-color: pink;
+width:28%;
+border-radius:10px;
+margin:5px;
+}
+
+.checkCard{
+float:left;
+background-color: greenyellow;
+width:28%;
+border-radius:10px;
+margin:5px;
+}
